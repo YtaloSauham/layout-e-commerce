@@ -8,13 +8,48 @@ body {
     margin: 0;
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    }
+}
 
 
 header {
 position: relative;
 }
+
+
+.destaques{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+}
+
+.destaquesFlex{
+    display: flex;
+    justify-content: center;
+}
+
+div.novidades {
+          width: 38%;
+          display: inline-block;
+          background-color: red;
+          margin-right: 5px;
+          border-radius: 5px;
+      }
+  
+ div.populares {
+          width: 38%;
+          display: inline-block;
+          background-color: green;
+          border-radius: 5px;
+          
+      }
+
+
 .logo img{
+    height: var(--tamanho-logo);
+}
+
+.foto img{
     height: var(--tamanho-logo);
 }
 
@@ -28,6 +63,7 @@ position: relative;
     bottom: 0;
     right: 0;
 }
+
 .menu-list{
     font-size: var(--tamanho-fonte-menu);
 }
@@ -108,9 +144,14 @@ text-decoration: none;
     margin: 0 0 0 200px;
 }
 
-
-
-
+.footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0, 0.7);
+}
 
 
 
