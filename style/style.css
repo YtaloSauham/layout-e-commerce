@@ -15,6 +15,28 @@ header {
 position: relative;
 }
 
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+	width: 150px;
+	margin: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.btn-destaques{
+    width: 30%;
+    background-color: #4b4848;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 .destaques{
     display: flex;
@@ -28,18 +50,23 @@ position: relative;
     justify-content: center;
 }
 
+.destaquesTitulo{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 div.novidades {
-          width: 38%;
+          width: 25%;
           display: inline-block;
-          background-color: red;
+          background-color: #ff9999;
           margin-right: 5px;
           border-radius: 5px;
       }
   
  div.populares {
-          width: 38%;
+          width: 25%;
           display: inline-block;
-          background-color: green;
+          background-color: #9999ff;
           border-radius: 5px;
           
       }
@@ -75,10 +102,30 @@ div.novidades {
 
 .sacola{
     padding: 2em 0 0 0 ;
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0;
+    left: 60%;
+    flex-direction: column;
+    display: flex;
+    font-size: 10px;
+    margin-top: auto;
    
+}
+
+.sacolaFlex{
+    display: flex;
+    justify-content: bottom;
+}
+
+.sacola-text{
+    margin-top: auto;
+}
+
+.sacola img{
+    height: 48px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
